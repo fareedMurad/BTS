@@ -1,0 +1,54 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+body{
+    overflow-x: hidden;
+}
+.logo-box{
+    padding-right: 10px;
+    padding-left: 10px;
+}
+#feature{
+    overflow: hidden;
+}
+
+#feature .card-image{
+    min-height: 262px;
+    overflow: hidden;
+    position: relative;
+}
+
+#feature .card-image img{
+    transform-origin: 65% 75%;
+    transition: transform 1s, filter .5s ease-out;
+}
+#feature:hover img{
+    position: absolute;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.user-interface-section{
+    min-height: 300px;
+}
+.user-interface-section .user-interface-screenshoot{ 
+    position: relative;
+}
+.user-interface-section .user-interface-screenshoot .card-image img{
+    transition: transform 1s, filter .5s ease-out;
+    
+}
+.user-interface-section .user-interface-screenshoot .card-image img:hover{
+    position: absolute;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+@media(max-width:768px){
+    .user-interface-section{
+        height: 800px;
+    } 
+}
